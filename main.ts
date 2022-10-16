@@ -8,7 +8,8 @@ basic.showLeds(`
     `)
 basic.forever(function () {
     Moisture = pins.analogReadPin(AnalogPin.P0)
-    if (Moisture <= 200) {
+    datalogger.log(datalogger.createCV("Moisture", Moisture))
+    if (Moisture <= 300) {
         basic.showLeds(`
             # . . . #
             # . . . #
@@ -17,7 +18,7 @@ basic.forever(function () {
             # # # # #
             `)
     } else {
-        if (Moisture <= 300) {
+        if (Moisture > 300 && Moisture <= 600) {
             basic.showLeds(`
                 # . . . #
                 # . . . #
@@ -34,6 +35,6 @@ basic.forever(function () {
                 # . . . #
                 `)
         }
-        basic.pause(2500)
     }
+    basic.pause(2500)
 })
