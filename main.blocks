@@ -1,12 +1,12 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="TeNn=vcb-s9UtdxXpN_1">Moisture</variable></variables><block type="device_forever" id=";jqsVLZq-Kt1!78%|0|_" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="ET!o@rNVS)A)aloabPD9"><field name="VAR" id="TeNn=vcb-s9UtdxXpN_1">Moisture</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="D;(M}bCMB06;Y2GfQgR9"><field name="name">AnalogPin.P1</field></block></value><next><block type="controls_if" id="f_s)RyAx_Fyn[C}IrWww"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="9rr[QItj9CevU|2U|%=A"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="9IFZ:Q~6=HEFP5u4UcQ}"><field name="VAR" id="TeNn=vcb-s9UtdxXpN_1">Moisture</field></block></value><value name="B"><shadow type="math_number" id="%/~la)E`g7`L8LQ{L93J"><field name="NUM">200</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="Yaro49q`]cMF),)S_3@h"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . . . . 
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="TeNn=vcb-s9UtdxXpN_1">Moisture</variable></variables><block type="device_forever" id=";jqsVLZq-Kt1!78%|0|_" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="ET!o@rNVS)A)aloabPD9"><field name="VAR" id="TeNn=vcb-s9UtdxXpN_1">Moisture</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="D;(M}bCMB06;Y2GfQgR9"><field name="name">AnalogPin.P0</field></block></value><next><block type="controls_if" id="f_s)RyAx_Fyn[C}IrWww"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="9rr[QItj9CevU|2U|%=A"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="9IFZ:Q~6=HEFP5u4UcQ}"><field name="VAR" id="TeNn=vcb-s9UtdxXpN_1">Moisture</field></block></value><value name="B"><shadow type="math_number" id="%/~la)E`g7`L8LQ{L93J"><field name="NUM">200</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="Yaro49q`]cMF),)S_3@h"><field name="LEDS">`
+        # . . . # 
+        # . . . # 
+        # . . . # 
         # # # # # 
         # # # # #
         `</field></block></statement><statement name="ELSE"><block type="controls_if" id="Jp%YNn%I~qno8G}A1`bQ"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="o,~hu+3(NlV}m4DO25U7"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="*5jD`m0nKAF=,}g0=F5f"><field name="VAR" id="TeNn=vcb-s9UtdxXpN_1">Moisture</field></block></value><value name="B"><shadow type="math_number" id="l79244]0ucos0ghwyXR6"><field name="NUM">300</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="CyRV8Ra_k0ixNtA*`0+/"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
+        # . . . # 
+        # . . . # 
         # # # # # 
         # # # # # 
         # # # # #
@@ -16,4 +16,10 @@
         . . # . . 
         . # . # . 
         # . . . #
-        `</field></block></statement><next><block type="device_pause" id="5%*G]yk)M[Icl8zonSNw"><value name="pause"><shadow type="timePicker" id="5sW5X+NYfow=0x^=r=kE"><field name="ms">2500</field></shadow></value></block></next></block></statement></block></next></block></statement></block></xml>
+        `</field></block></statement><next><block type="device_pause" id="5%*G]yk)M[Icl8zonSNw"><value name="pause"><shadow type="timePicker" id="5sW5X+NYfow=0x^=r=kE"><field name="ms">2500</field></shadow></value></block></next></block></statement></block></next></block></statement></block><block type="pxt-on-start" id="Qu|UtIA[i2CKHO$6rCwg" x="-201" y="110"><statement name="HANDLER"><block type="device_show_leds" id="vuTfFCbmM3*@a)#j3ih^"><field name="LEDS">`
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # # # # #
+        `</field></block></statement></block></xml>
